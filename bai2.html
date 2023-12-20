@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Chương trình Phân loại Tuổi:
+Người dùng nhập vào tuổi của một người, và chương trình sẽ
+phân loại họ là trẻ em, thiếu niên, người trưởng thành, hoặc người cao tuổi
+dựa trên các ngưỡng tuổi cụ thể.-->
+<input id="number" placeholder="Nhap tuoi vao day">
+<button onclick="check()">Kiem tra</button>
+<script>
+    function check(){
+        let inputNumber = document.getElementById("number")
+        let a = (inputNumber.value);
+        if(a>=6 && a<=10){
+            alert("Day la tre em");
+        } else if (a>=11 && a<=16){
+            alert("Day la thieu nien");
+        } else if (a>=18 && a<=59){
+            alert ("Day la nguoi truong thanh");
+        }else{
+            alert("Day la nguoi cao tuoi");
+        }
+    }
+
+</script>
+</body>
+</html>
